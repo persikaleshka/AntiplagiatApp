@@ -1,0 +1,3 @@
+com/app/gateway/controller/GatewayController.class
+com/app/gateway/config/RouteConfig.class
+com/app/gateway/GatewayApplication.class
