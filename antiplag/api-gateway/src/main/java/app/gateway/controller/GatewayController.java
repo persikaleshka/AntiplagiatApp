@@ -25,6 +25,7 @@ public class GatewayController {
     }
 
     @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @Operation(summary = "Загрузить .txt файл")
     public Mono<String> uploadFile(@RequestPart("file") FilePart file) {
         return webClient.post()
                 .uri("http://file-storing:8081/files")
@@ -34,18 +35,20 @@ public class GatewayController {
                 .bodyToMono(String.class);
     }
 
-    @GetMapping("/analyze/{fileId}")
-    @Operation(summary = "Получить результаты анализа по ID")
-    public Mono<String> getAnalysisResult(@Parameter(description = "ID файла", required = true) @PathVariable("fileId") UUID fileId) {
-        return webClient.get()
+    @PostMapping("/analyze/{fileId}")
+    @Operation(summary = "Запустить анализ файла по ID")
+    public Mono<String> startAnalysis(@Parameter(description = "ID файла", required = true) @PathVariable("fileId") UUID fileId) {
+        return webClient.post()
                 .uri("http://file-analysis:8082/analysis/" + fileId)
                 .retrieve()
                 .bodyToMono(String.class);
     }
     
     
+    
 
     @GetMapping("/files/{fileId}")
+    @Operation(summary = "Получить файл по ID")
     public Mono<String> getFile(@Parameter(description = "UUID файла, который нужно получить", required = true) @PathVariable("fileId") UUID fileId) {
         return webClient.get()
                 .uri("http://file-storing:8081/files/" + fileId)
