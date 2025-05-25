@@ -1,0 +1,5 @@
+com/app/filestore/repository/FileRepository.class
+com/app/filestore/controller/FileController.class
+com/app/filestore/FileStoreApplication.class
+com/app/filestore/model/StoredFile.class
+com/app/filestore/service/FileStorageService.class
