@@ -1,0 +1,6 @@
+com/app/analysis/service/TextAnalysisService.class
+com/app/analysis/repository/AnalysisRepository.class
+com/app/analysis/controller/AnalysisController.class
+com/app/analysis/model/AnalysisResult.class
+com/app/analysis/FileAnalysisApplication.class
+com/app/analysis/util/TextHasher.class

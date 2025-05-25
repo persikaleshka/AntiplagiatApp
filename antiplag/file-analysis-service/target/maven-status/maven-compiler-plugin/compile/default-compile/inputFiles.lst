@@ -1,0 +1,6 @@
+/Users/alenkasharipova/AntiplagiatApp/antiplag/file-analysis-service/src/main/java/com/app/analysis/FileAnalysisApplication.java
+/Users/alenkasharipova/AntiplagiatApp/antiplag/file-analysis-service/src/main/java/com/app/analysis/controller/AnalysisController.java
+/Users/alenkasharipova/AntiplagiatApp/antiplag/file-analysis-service/src/main/java/com/app/analysis/model/AnalysisResult.java
+/Users/alenkasharipova/AntiplagiatApp/antiplag/file-analysis-service/src/main/java/com/app/analysis/repository/AnalysisRepository.java
+/Users/alenkasharipova/AntiplagiatApp/antiplag/file-analysis-service/src/main/java/com/app/analysis/service/TextAnalysisService.java
+/Users/alenkasharipova/AntiplagiatApp/antiplag/file-analysis-service/src/main/java/com/app/analysis/util/TextHasher.java
